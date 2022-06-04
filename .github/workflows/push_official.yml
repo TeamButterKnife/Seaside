@@ -1,8 +1,6 @@
 name: Build and Deploy to official project
 on: 
-  push:
-    branches:
-      - mvp
+  workflow_dispatch: {}
 jobs:
   buildForAllSupportedPlatforms:
     name: Build for ${{ matrix.targetPlatform }}
