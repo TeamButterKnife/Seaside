@@ -1,4 +1,4 @@
-name: Build and Deploy to test project
+name: Build and Deploy to official project
 on: 
   push:
     branches:
@@ -44,6 +44,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: windows
-          ITCH_GAME: seaside-testproject
+          ITCH_GAME: seaside-official
           ITCH_USER: professorcowboy
           PACKAGE: build/${{ matrix.targetPlatform }}
