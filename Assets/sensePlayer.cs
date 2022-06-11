@@ -12,7 +12,7 @@ public class sensePlayer : MonoBehaviour
             // get hero by their object
             // 
             // other.game
-            other.gameObject.GetComponent<PlayerTalk>().TalkRange(true);
+            other.gameObject.GetComponent<PlayerTalk>().TalkRange(true, gameObject.GetComponent<NPCTalk>().startNode);
         }
     }
 
@@ -20,7 +20,7 @@ public class sensePlayer : MonoBehaviour
         if(other.name == "Hero")
         {
             Debug.Log("You've left talking range, see you soon!");
-            other.gameObject.GetComponent<PlayerTalk>().TalkRange(false);
+            other.gameObject.GetComponent<PlayerTalk>().TalkRange(false, "");
         }
     }
 }
