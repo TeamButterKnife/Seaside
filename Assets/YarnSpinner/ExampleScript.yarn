@@ -43,7 +43,13 @@ Convenient_Narrator: You come across an overturned old ship.
 title: al2
 ---
 Convenient_Narrator: Back at Uncle Al's place...
-Uncle_Al: Almost thought you got swept out. Was about to flip a coin.
+Uncle_Al: Almost thought you got swept out to sea. Ya took so long, I was about to flip a coin.
+-> Flip a coin to decide what?
+    Uncle_Al: Don't worry about it. You're here, so don't hassle me. 
+        <<jump al3>>
+===
+title: al3
+---
 -> Hey, what was your old ship's name?
     Uncle_Al: What, all those wholly accurate anecdotes and you don't remember her name?
     Uncle_Al: Ah, whatever. The Cannonball Z... majestic beast. What a loss.
@@ -90,4 +96,21 @@ title: items
         -> You seem to know an awful lot about this. Ever consider mentoring a wannabe captain?
             King_Gull: Ha! Maybe, if it helps me get out of town. I have standards, though, Captain.
             King_Gull: Show me you're dedicated to this and gather up those items. We can talk then.
+===
+title: getHat
+---
+Uncle_Al: Noticed you went on another walk. Clear your head any?
+    -> Yeah, but not the way you want. You were the Z's captain. You also have a nice hat on a shelf.
+        Uncle_Al: Mm-hm, and what's my old hat got to do with someone who ain't a pirate?
+            -> What about someone who might've found a mentor who's a stickler for tradition?
+                Uncle_Al: Mentor? What mentor? Who?
+                    -> That King Gull guy. The one that's always using shop windows as mirrors. He sounded like he knew what he was talking about.
+                        Uncle_Al: Gull? I know he spent a few years... Mm... I still don't like it. My hat stays where it is, as it should.
+                        -> Oh, come on. I hear about the adventures went on and the people you met and battles you fought. If anything, it's your fault I want this so badly.
+                            Uncle_Al: ...
+                            Uncle_Al: Fine. Don't ruffle the feather. It was your grandmother's, rest her soul.
+                                <<set $hat=true>>
+                        -> Uncle Al, please. My parents are gone and I just... I don't know, go make them proud.
+                            Uncle_Al: Heck no. What, you're gonna be a pirate 'cause you're sad? How does that make sense? No.
+                                <<set $noHat=true>>
 ===
