@@ -37,6 +37,11 @@ public class PlayerTalk : MonoBehaviour
         gameObject.GetComponent<ShuttleMovement>().canMove = true;
     }
 
+    public void SetNode()
+    {
+        // Need to 
+    }
+
     public void TalkRange(bool inRange)
     {
         // This will fire when we enter or leave talk range.
