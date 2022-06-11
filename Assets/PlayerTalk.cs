@@ -26,6 +26,7 @@ public class PlayerTalk : MonoBehaviour
         if(canTalk)
         {
             dialogueRunner.StartDialogue(targetNode);
+            gameObject.GetComponent<ShuttleMovement>().canMove = false;
         }
     }
 
