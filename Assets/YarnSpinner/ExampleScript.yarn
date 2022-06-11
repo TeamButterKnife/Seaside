@@ -2,5 +2,48 @@
 // Title HAS  to be Start in order to work, apparently.
 
 ---
-Grumbo: This is the grumbo test.
+Piper: Uncle Al! I finally decided: it's time for me to take up piracy.
+    <<jump alHub>>
+===
+title: alHub
+---
+Uncle_Al: Piracy? What for? Ain't no good in piracy. Fun, though.
+Uncle_Al: Some money in it, too, especially if ya make friends with the--
+-> Uncle Al, please.
+    Uncle_Al: Right, right. For real, though.
+    Uncle_Al: You don't even have a ship. What kinda pirate doesn't have her own ship?
+    -> I wish you hadn't lost yours.
+        Uncle_Al: Ah, stray cannonballs are part of the game.
+        Uncle_Al: So are purposefully-shot ones.
+        Uncle_Al: Suprise storms, too, all at once. Hell of a day.
+        -> That sounds awesome, actually.
+        Uncle_Al: Ha! It was. Too bad for you, huh?
+        Uncle_Al: Go take a walk and clear your head, kid.
+        -> Down to the water for a walk, then...
+            <<jump beach>>
+===
+title: beach
+---
+At_the_Beach:
+Piper: I can't believe him... ugh.
+Piper: I guess I could use a chance to think, though. I need to plan.
+    <<jump shipwreck>>
+===
+title: shipwreck
+---
+Convenient_Narrator: You come across an overturned old ship.
+    -> Oh, wow. That's neat timing.
+    Convenient_Narrator: The small ship seems to be in good shape, all things considered. A hole or two in the hull, cracked mast.
+    Convenient_Narrator: All fixable things, you think. Maybe you <i>could</i> be the kinda pirate that has her own ship...
+        -> Examine the ship further.
+            <<jump shipName>>
+
+===
+title: shipName
+---
+Convenient_Narrator: What's this, under the algae? A name?
+Convenient_Narrator: "Cannon Ball Z?"
+    -> Cannon Ball Z? Isn't that...?
+    Piper: Oh, heck yeah.
+
 ===
