@@ -26,7 +26,20 @@ public class PlayerTalk : MonoBehaviour
         if(canTalk)
         {
             dialogueRunner.StartDialogue(targetNode);
+            gameObject.GetComponent<ShuttleMovement>().canMove = false;
+            dialogueRunner.onDialogueComplete.AddListener(DoneTalking);
         }
+
+    }
+
+    private void DoneTalking()
+    {
+        gameObject.GetComponent<ShuttleMovement>().canMove = true;
+    }
+
+    public void SetNode()
+    {
+        // Need to 
     }
 
     public void TalkRange(bool inRange)
