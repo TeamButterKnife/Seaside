@@ -9,6 +9,16 @@ public class sensePlayer : MonoBehaviour
         if(other.name == "Hero")
         {
             Debug.Log("Hello world, You're close enough to talk!");
+            // get hero by their object
+            // 
+            // other.game
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        if(other.name == "Hero")
+        {
+            Debug.Log("You've left talking range, see you soon!");
         }
     }
 }

@@ -32,4 +32,13 @@ public class ShuttleMovement : MonoBehaviour
        inputWatcher = movementVector;
        Debug.Log(movementVector);
     }
+
+    public void CanTalk(GameObject focus)
+    {
+        Debug.Log("We can talk to " + focus.name);
+    }
+    public void CantTalk(GameObject focus)
+    {
+        Debug.Log("We can talk to " + focus.name);
+    }
 }
