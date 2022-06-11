@@ -37,8 +37,8 @@ public class ShuttleMovement : MonoBehaviour
     {
         Debug.Log("We can talk to " + focus.name);
     }
-    public void CantTalk(GameObject focus)
+    public void CannotTalk(GameObject focus)
     {
-        Debug.Log("We can talk to " + focus.name);
+        Debug.Log("We can't talk to " + focus.name);
     }
 }
