@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6d474ffa26043e469845a25280ded41
+guid: be4a5a9940d76184b8928a1da0c0a7ab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: uncle-al-yellowbeak-Sneer_0
+      name: Budgie_Boy-Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 34
-        height: 66
+        width: 77
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc96369e7f44ec5498d29777f17f0d4e
-      internalID: -998442127
+      spriteID: 0e79cbee656dc7e409d3effa738f0eb2
+      internalID: 1675883873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uncle-al-yellowbeak-Sneer_1
+      name: Budgie_Boy-Idle_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 77
         y: 0
-        width: 34
-        height: 66
+        width: 77
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28752deb6d0d52d4ab53b286eb41dbfa
-      internalID: -1007337840
+      spriteID: d7122a3bf2b4f3a449d60ea186cf2d19
+      internalID: -1530036854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uncle-al-yellowbeak-Sneer_2
+      name: Budgie_Boy-Idle_2
       rect:
         serializedVersion: 2
-        x: 68
+        x: 154
         y: 0
-        width: 34
-        height: 66
+        width: 77
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ae25b3de8f406c4383aff1c7a4b42a5
-      internalID: -1265345418
+      spriteID: 83219e6c223d4ef4795e8d7c41ef1dc3
+      internalID: 1553805941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uncle-al-yellowbeak-Sneer_3
+      name: Budgie_Boy-Idle_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 231
         y: 0
-        width: 34
-        height: 66
+        width: 77
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +195,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fe1f812b61d543479cc47e552cda343
-      internalID: -878329328
+      spriteID: 719476e3519c13942a4e20de98ddf896
+      internalID: 593796285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Budgie_Boy-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 77
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4378c7ae6955a4db023b80be65c0fd
+      internalID: 1732968631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Budgie_Boy-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 77
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b3a250d1018c541a1f01a764416efa
+      internalID: 1729850302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Budgie_Boy-Idle_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 77
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44751c978a09f8a4694aecde2e0a2a1f
+      internalID: 1859389840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Budgie_Boy-Idle_7
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 0
+        width: 77
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555a171ec0a967b47ac43a80107d8b01
+      internalID: -873854585
       vertices: []
       indices: 
       edges: []
@@ -212,10 +296,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      uncle-al-yellowbeak-Sneer_3: -878329328
-      uncle-al-yellowbeak-Sneer_2: -1265345418
-      uncle-al-yellowbeak-Sneer_1: -1007337840
-      uncle-al-yellowbeak-Sneer_0: -998442127
+      Budgie_Boy-Idle_5: 1729850302
+      Budgie_Boy-Idle_2: 1553805941
+      Budgie_Boy-Idle_4: 1732968631
+      Budgie_Boy-Idle_0: 1675883873
+      Budgie_Boy-Idle_7: -873854585
+      Budgie_Boy-Idle_1: -1530036854
+      Budgie_Boy-Idle_3: 593796285
+      Budgie_Boy-Idle_6: 1859389840
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,47 @@
+{ "frames": [
+   {
+    "filename": "king-gull #Wink 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "sourceSize": { "w": 32, "h": 68 },
+    "duration": 250
+   },
+   {
+    "filename": "king-gull #Wink 1.aseprite",
+    "frame": { "x": 32, "y": 0, "w": 32, "h": 68 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "sourceSize": { "w": 32, "h": 68 },
+    "duration": 150
+   },
+   {
+    "filename": "king-gull #Wink 2.aseprite",
+    "frame": { "x": 64, "y": 0, "w": 32, "h": 68 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "sourceSize": { "w": 32, "h": 68 },
+    "duration": 150
+   },
+   {
+    "filename": "king-gull #Wink 3.aseprite",
+    "frame": { "x": 96, "y": 0, "w": 32, "h": 68 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "sourceSize": { "w": 32, "h": 68 },
+    "duration": 250
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.35",
+  "image": "king-gull-Wink.png",
+  "format": "I8",
+  "size": { "w": 128, "h": 68 },
+  "scale": "1"
+ }
+}
