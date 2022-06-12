@@ -44,4 +44,12 @@ public class PlayerTalk : MonoBehaviour
         if(inRange) canTalk = true;
         else canTalk = false;
     }
+
+    [YarnCommand("die")]
+    public static void Die() 
+    {
+        Debug.Log("This is the part where you die!");
+        // Write dying code.
+
+    }
 }

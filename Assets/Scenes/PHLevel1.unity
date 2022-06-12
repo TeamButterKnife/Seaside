@@ -4180,7 +4180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9011372218960224355, guid: bc2f36147d3953f4088702fede25eae5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9011372218960224355, guid: bc2f36147d3953f4088702fede25eae5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4653,6 +4653,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3292657647476544605, guid: 8cf7d1d042766b84a896106f0578bbc2, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 8cf7d1d042766b84a896106f0578bbc2, type: 3}
+      propertyPath: yarnProject
+      value: 
+      objectReference: {fileID: 7545569452688597077, guid: c172f5f99d83a354fa33143bcb5de000, type: 3}
+    - target: {fileID: 3579681405068720530, guid: 8cf7d1d042766b84a896106f0578bbc2, type: 3}
+      propertyPath: startAutomatically
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7778558434935992803, guid: 8cf7d1d042766b84a896106f0578bbc2, type: 3}
