@@ -1,0 +1,83 @@
+{ "frames": [
+   {
+    "filename": "Budgie_Boy #Idle 0.png",
+    "frame": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 250
+   },
+   {
+    "filename": "Budgie_Boy #Idle 1.png",
+    "frame": { "x": 77, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 250
+   },
+   {
+    "filename": "Budgie_Boy #Idle 2.png",
+    "frame": { "x": 154, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 150
+   },
+   {
+    "filename": "Budgie_Boy #Idle 3.png",
+    "frame": { "x": 231, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 150
+   },
+   {
+    "filename": "Budgie_Boy #Idle 4.png",
+    "frame": { "x": 308, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 250
+   },
+   {
+    "filename": "Budgie_Boy #Idle 5.png",
+    "frame": { "x": 385, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 250
+   },
+   {
+    "filename": "Budgie_Boy #Idle 6.png",
+    "frame": { "x": 462, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 150
+   },
+   {
+    "filename": "Budgie_Boy #Idle 7.png",
+    "frame": { "x": 539, "y": 0, "w": 77, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 77, "h": 46 },
+    "sourceSize": { "w": 77, "h": 46 },
+    "duration": 150
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.35",
+  "image": "Budgie_Boy-Idle.png",
+  "format": "RGBA8888",
+  "size": { "w": 616, "h": 46 },
+  "scale": "1"
+ }
+}

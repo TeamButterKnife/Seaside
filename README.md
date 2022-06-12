@@ -11,3 +11,7 @@ The official version: https://professorcowboy.itch.io/seaside-official
 
 ## Current ToDo list
 Set up the To Do list.
+
+
+## Testing commit
+Computer improperly configured.
