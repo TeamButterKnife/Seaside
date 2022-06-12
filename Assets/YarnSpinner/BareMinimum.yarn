@@ -1,12 +1,32 @@
 ﻿title: start
 ---
-Convenient_Narrator: It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm
-Convenient_Narrator: Piper is ready to leave and carry on the family legacy and become a pirate.
+Convenient_Narrator: It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm isn't exciting at all.
+Convenient_Narrator: Piper is ready to leave to carry on the family legacy and become a pirate.
 ===
 title: preShipAl
 ---
 Uncle_Al: There you are.
-    -> Uncle Al, I've decided to finally pursue piracy.
+    -> Uncle Al, It's time for me to get into piracy.
         Uncle_Al: What? You're too young to be a pirate. You don't even have a ship.
         Uncle_Al: Shame about losing mine to the royal navy...
+===
+title: preShipBrawk
+---
+Brawk: Buzz off.
+    -> I was just saying hi.
+        No way.
+Convenient_Narrator: Of course, Brawk being the fellow he is, expressed his displeasure clearly.
+    <<die>>
+===
+title: preShipPeach
+---
+Peach: I think that kid stole some of my peaches...
+    -> Hey, Peach. Guess what?
+        Peach: Let me guess. Pirate time?
+===
+title: preShipKG
+---
+King_Gull: What's up, kid?
+    -> I'm finally going to go pirating. You're a sailor, you understand.
+        King_Gull: But no ship or crew? Are you ready for he pirate life?
 ===
