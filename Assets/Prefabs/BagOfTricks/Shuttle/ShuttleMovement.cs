@@ -7,6 +7,7 @@ public class ShuttleMovement : MonoBehaviour
 {
     public float speed;
     public int lives;
+    private bool facingRight;
 
     public bool canMove = true;
 
@@ -28,14 +29,22 @@ public class ShuttleMovement : MonoBehaviour
         if(canMove)
         {
             rigidbody2D.velocity = new Vector2(speed * inputWatcher.x, speed * inputWatcher.y);
+            gameObject.GetComponent<SpriteRenderer>().flipX = facingRight;
         }
     }
 
     private void OnMove(InputValue moveInput)
     {
-       Vector2 movementVector = moveInput.Get<Vector2>();
-       inputWatcher = movementVector;
-       Debug.Log(movementVector);
+        Vector2 movementVector = moveInput.Get<Vector2>();
+        inputWatcher = movementVector;
+        Debug.Log(movementVector);
+        if(inputWatcher.x > 0){
+            //Facing right
+            facingRight = true;
+        }else if(inputWatcher.x < 0){
+            //Facing Left
+            facingRight = false;
+        }
     }
 
     public void CanTalk(GameObject focus)
