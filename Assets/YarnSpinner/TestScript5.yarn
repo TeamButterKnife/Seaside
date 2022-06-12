@@ -111,6 +111,7 @@ Uncle_Al: Saw you talking to K.G. again. What're you two plotting?
             -> Huh. I guess you could call it that. Actually, you have your old captain's hat from when you were sailing.
                 Uncle_Al: Oh, for... fine. If K.G. thinks you have it in you, you can take the hat.
                     <<set $hat=true>>
+                    <<hatGet Hero>>
 ===
 title: getRum
 ---
@@ -121,6 +122,7 @@ Peach: You can't have the whole thing, of course, just a sample. Oh, this is goi
             -> I have bad news. I think I saw that kid spit in it before I came over.
                 Peach: <i>Ugh!</i> I knew he was up to something! Here, get this away from me.
                     <<set $rum = true>>
+                    <<hatGet Hero>>
 ===
 title: onlyHat
 ---

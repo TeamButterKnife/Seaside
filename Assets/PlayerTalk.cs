@@ -41,10 +41,13 @@ public class PlayerTalk : MonoBehaviour
     }
 
     [YarnCommand("hatGet")]
-    public static void hatGet()
+    public void hatGet()
     {
         Debug.Log("You should have a hat now! Shame!");
         // Turn on hat child object. 
+        // << hatGet Hero >>
+        gameObject.GetComponent<ShuttleMovement>().Hat.SetActive(true);
+        
     }
 
     private void DoneTalking()
