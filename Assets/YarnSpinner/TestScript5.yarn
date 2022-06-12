@@ -112,6 +112,16 @@ Uncle_Al: Saw you talking to K.G. again. What're you two plotting?
                 Uncle_Al: Oh, for... fine. If K.G. thinks you have it in you, you can take the hat.
                     <<set $hat=true>>
 ===
+title: getRum
+---
+Peach: Ah, you're back! Here, I wanted you to try a sip of this. Spiced peach rum!
+Peach: You can't have the whole thing, of course, just a sample. Oh, this is going to be such a hit!
+    -> Oh, is... that the bottle that's been here all day?
+        Peach: Of course! Nothing like a bit of sun-warmed rum.
+            -> I have bad news. I think I saw that kid spit in it before I came over.
+                Peach: <i>Ugh!</i> I knew he was up to something! Here, get this away from me.
+                    <<set $rum = true>>
+===
 title: onlyHat
 ---
 King_Gull: Got the hat already, huh? Not too bad.
@@ -124,8 +134,11 @@ King_Gull: Got the hat already, huh? Not too bad.
     -> Being a little tricky comes in handy.
         King_Gull: Correct. Now go get that rum and shoulder parrot.
 ===
-
-title: getRum
+title: multiTrue
 ---
-Peaches: F Word!
+<<if $hat == true && $ship == true>>
+    C_N: You'll get this.
+<<else>>
+    C_N: You get this instead.
+<<endif>>
 ===

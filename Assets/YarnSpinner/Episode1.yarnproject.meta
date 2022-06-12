@@ -9,26 +9,9 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 053561912b1654d80a424bb0696a74ae, type: 3}
   sourceScripts:
-  - {fileID: 6391573757903218779, guid: 9bfad926afd49d14bb4a08c4064fbb31, type: 3}
-  - {fileID: 6391573757903218779, guid: 4b6ba448ba7b83f43b13b6eab31849db, type: 3}
+  - {fileID: 6391573757903218779, guid: 441c8eb8f7d214e48b9ff8e232cb12c7, type: 3}
   compileErrors: []
-  serializedDeclarations:
-  - name: $hat
-    typeName: Bool
-    defaultValueBool: 0
-    defaultValueNumber: 0
-    defaultValueString: 
-    description: Implicitly declared in ExampleScript.yarn, node getHat
-    isImplicit: 1
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: 9bfad926afd49d14bb4a08c4064fbb31, type: 3}
-  - name: $rum
-    typeName: Bool
-    defaultValueBool: 0
-    defaultValueNumber: 0
-    defaultValueString: 
-    description: Implicitly declared in ExampleScript.yarn, node getRum
-    isImplicit: 1
-    sourceYarnAsset: {fileID: 6391573757903218779, guid: 9bfad926afd49d14bb4a08c4064fbb31, type: 3}
+  serializedDeclarations: []
   defaultLanguage: en-US
   languagesToSourceAssets: []
   useAddressableAssets: 0
