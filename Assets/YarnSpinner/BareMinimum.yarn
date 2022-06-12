@@ -1,0 +1,45 @@
+﻿title: start
+---
+Convenient_Narrator: It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm isn't exciting at all.
+Convenient_Narrator: Piper is ready to leave to carry on the family legacy and become a pirate.
+===
+title: preShipAl
+---
+<<if $ship == true>>
+Conventient_Narrator: You've hit the end of our dialogue!
+<<else>>
+Uncle_Al: There you are.
+    -> Uncle Al, It's time for me to get into piracy.
+        Uncle_Al: What? You're too young to be a pirate. You don't even have a ship.
+        Uncle_Al: Shame about losing mine to the royal navy...
+<<endif>>
+
+===
+title: preShipBrawk
+---
+Brawk: Buzz off.
+    -> I was just saying hi.
+        No way.
+Convenient_Narrator: Of course, Brawk being the fellow he is, expressed his displeasure clearly.
+    <<die>>
+===
+title: preShipPeach
+---
+Peach: I think that kid stole some of my peaches...
+    -> Hey, Peach. Guess what?
+        Peach: Let me guess. Pirate time?
+===
+title: preShipKG
+---
+King_Gull: What's up, kid?
+    -> I'm finally going to go pirating. You're a sailor, you understand.
+        King_Gull: But no ship or crew? Are you ready for he pirate life?
+===
+title: ship
+---
+Convenient_Narrator: Down by the water, Piper finds a busted up old ship with the faded name “Cannonball Z” on the hull..
+	->It's not <i>that</i> busted up.
+		Convenient_Narrator: With a large hole and a broken mast, fixing it will be quite a task, but if she's up to the challenge…
+			-> I think I might have a ship.
+            << set $ship=true>>
+===

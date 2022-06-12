@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 public class PlayerTalk : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerTalk : MonoBehaviour
     private void Start() 
     {
         dialogueRunner = dialogueHolder.GetComponent<DialogueRunner>();
+        dialogueRunner.onDialogueComplete.AddListener(DoneTalking);
     }
 
     private void OnTalk()
@@ -30,6 +32,19 @@ public class PlayerTalk : MonoBehaviour
             dialogueRunner.onDialogueComplete.AddListener(DoneTalking);
         }
 
+    }
+
+    [YarnCommand("die")]
+    public static void OnDisable() {
+        Debug.Log("You are made dead (by the writers)");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    [YarnCommand("hatGet")]
+    public static void hatGet()
+    {
+        Debug.Log("You should have a hat now! Shame!");
+        // Turn on hat child object. 
     }
 
     private void DoneTalking()
