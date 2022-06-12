@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3991317506954975173}
   - component: {fileID: 1018860358079700084}
   - component: {fileID: 8924315460426598841}
+  - component: {fileID: 2352059313894755181}
   m_Layer: 0
   m_Name: UncleAl
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7145845036161460010
 SpriteRenderer:
@@ -155,3 +156,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startNode: boat
+--- !u!95 &2352059313894755181
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7608082048632773543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6bf594e0f58da6b4db1e0cd19d03e481, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

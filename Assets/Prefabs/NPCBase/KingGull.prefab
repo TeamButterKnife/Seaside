@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3581303749142576670}
   - component: {fileID: 645390174903268783}
   - component: {fileID: 9011372218960224354}
+  - component: {fileID: 1127439759015934663}
   m_Layer: 0
   m_Name: KingGull
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7348888167196905201
 SpriteRenderer:
@@ -155,3 +156,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startNode: Start
+--- !u!95 &1127439759015934663
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016984277419553404}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7c6daab62ea3e7469ab88ea46bbd7f1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
