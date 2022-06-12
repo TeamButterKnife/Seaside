@@ -54,7 +54,7 @@ title: peach
 ---
 <<if $fetchQuest == true>>
 <<jump getRum>>
-<<endif>>>>
+<<endif>>
 Peach: Amazing how the flinging of sand all over my stand stops when other folks come over.
     -> Sorry about the sand, but I have good news. I found a ship!
         Peach: Really? It usually takes much longer for that part.
@@ -85,6 +85,8 @@ King_Gull: Back again?
 title: brawk
 ---
 <<if $fetchQuest == true>>
+<<jump brawk2>>
+<<endif>>
 Brawk: Again?
     -> Look...
         <<die>>
