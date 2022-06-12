@@ -69,7 +69,12 @@ title: beach2
 ---
 Convenient_Narrator: Identifying the repairs that need to be done seems a reasonable first step, so back to the beach we go.
 Convenient_Narrator: Oh, it looks like you aren't the only one on the beach today. While you're going over the Z, someone calls out.
-King_Gull: Looks like your boat needs quite the patch job. Planning on going fishing?
+King_Gull: Looks like your boat needs quite the patch job. 
+    <<jump kg1>>
+===
+title: kg1
+---
+King_Gull: Planning on going fishing?
     ->It's a pirate ship, not a fishing boat.
     King_Gull: Oh, it's your pirate ship! Excuse me, then. You just don't strike me as ready for the pirately life. // B
         -> Why do you even care? It's not your boat.
@@ -93,7 +98,7 @@ Piper: Three things? All I need is a good ship and a mentor.
 ===
 title: getHat
 ---
-Uncle_Al: Noticed you went on another walk. Get those wackadoodle notions outta your noggin? //B
+Uncle_Al: Noticed you went on another walk. Get those wackadoodle thoughts outta your noggin? //B //decided I didn't want clearing and notion twice
     -> No, but anyway. You were the Z's captain. You also have a nice hat you've held onto your whole retirement. // B
         Uncle_Al: Mm-hm, and what's my old hat got to do with someone who ain't a pirate?
             -> What about someone who might've found a mentor who's a stickler for tradition?
@@ -104,12 +109,13 @@ Uncle_Al: Noticed you went on another walk. Get those wackadoodle notions outta 
                             Uncle_Al: ...
                             Uncle_Al: Fine. Don't ruffle the feather. It was your grandmother's, rest her soul.
                                 <<set $hat=true>>
-                        -> Uncle Al, please. My parents are dead, and there's no life here. I'm tired of working weekends at Peach's farm. // B
-                            Uncle_Al: Heck no. What, you're gonna be a pirate 'cause you're sad? How does that make sense? Go think some more. // B
+                        -> Uncle Al, please. My parents are dead, and there's no life here. I'm tired of working weekends at Peach's farm and I'm tired of this town.// B
+                            Uncle_Al: Heck no. What, you're gonna be a pirate 'cause you're bored? How does that make sense? Go think some more. // B
                                 <<set $hat=false>>
-<<jump getRum>>
+Piper: Someone around here has to have some rum... Why don't we have a shop for that? //get it? lol
+<<jump peach>>
 ===
-title: getRum
+title: peach
 ---
 //Tell Peach that drinking is bad for her health. She tells you to get lost.
 //Tell Peach that you saw kid spit into her bottle while she was helping the last customer.
@@ -117,12 +123,35 @@ title: getRum
 
 // proud of her peaches, a little sassy, nervous about kids
 
-Peach: Piper! How you doin'? Got some primo peaches today... And I mean more than just me, ohoho!
-    -> Hey, Peach! Doing pretty good. Finally decided to go for it and be a pirate.
+Peach: What a shame about all this sand being so casually flung toward my cart. I wonder where it comes from?
+Peach: What a shame that THIS SAND IS GETTING ALL OVER MY PEACHES.
+Peach: Missing two peaches, too. Best Peaches on the coast and they just WANDER OFF ON THEIR OWN. What a mystery.
+Peach: Oh, Piper! Hello, how are you, dear?
+    -> Hey, Peach. Doing pretty good. Finally decided to go for it and be a pirate.
         //<<set $hat = true>>
         <<if $hat == true>>
             Peach: I see that. Al's old hat, eh? I recognize that old thing.
         <<else>>
             Peach: Oho, really? How're ya planning to do that, then?
         <<endif>>
+<<jump getRum>>
+===
+title: getRum
+---
+Peach: More goes into being a pirate than a fancy hat, Piper! Quite a lot, in fact.
+    -> A bottle half-decent rum and a shoulder parrot, I hear.
+        Peach: Yes, yes, at minimum! Oho, but that'll still be enough to get you started, darling.
+        Peach: I do have to ask, as a bit of a connoisseur, would you know a fine rum if it crossed your path?
+            -> Nah, but all I really need is some that's half-decent. Any idea where I could get some?
+                Peach: As a matter of fact, I do! A bit more than half-decent, if I have half-decent taste. Ohoho... oh, but yes!
+                Peach: I have a bit here actually that you may have a sip of... So that you can know a half-decent one when you find it.
+                -> You're talking about that bottle there behind your cart?
+                    Peach: Of course, darling.
+                        -> Peach, that's not really good for you, I think. 
+                            Peach: Well, no one asked, Piper. I'll see you at the farm this weekend. //I SAID GOOD DAY, SIR.
+                                <<set $rum=false>>
+                        -> Ooh... Peach, I think... I think I saw that kid spit in your bottle.
+                            Peach: What!? <i>Ugh!</i> I knew that little... Ooh!
+                            Peach: Disgusting. It's certainly half-decent <i>now</i>. Get rid of this for me, would you, darling?
+                                <<set $rum=true>>
 ===
