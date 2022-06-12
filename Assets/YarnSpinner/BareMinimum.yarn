@@ -3,37 +3,41 @@
 Convenient_Narrator: It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm isn't exciting at all.
 Convenient_Narrator: Piper is ready to leave to carry on the family legacy and become a pirate.
 ===
-title: al
+title: preShipAl
 ---
+<<if $ship == true>>
+<<jump al>>
+<<endif>>
 Uncle_Al: There you are.
     -> Uncle Al, It's time for me to get into piracy.
         Uncle_Al: What? You're too young to be a pirate. You don't even have a ship.
         Uncle_Al: Shame about losing mine to the royal navy...
-<<if $ship == true>>
-Uncle_Al: Took a walk, huh?
-    -> You're not gonna believe this, but I found a ship washed up on the beach.
-        Uncle_Al:
-<<else>>
-
-<<endif>>
-
 ===
-title: brawk
+title: preShipBrawk
 ---
+<<if $ship == true>>
+<<jump brawk>>
+<<endif>>
 Brawk: Buzz off.
     -> I was just saying hi.
-        No way.
+        Too bad.
 Convenient_Narrator: Of course, Brawk being the fellow he is, expressed his displeasure clearly.
     <<die>>
 ===
-title: peach
+title: preShipPeach
 ---
+<<if $ship == true >>
+<<jump peach>>
+<<endif>>
 Peach: I think that kid stole some of my peaches...
     -> Hey, Peach. Guess what?
-        Peach: Let me guess. Pirate time?
+        Peach: Let me guess. Pirate time? A lot goes into that.
 ===
-title: kg
+title: preShipKG
 ---
+<<if $ship == true>>
+<<jump KG>>
+<<endif>>
 King_Gull: What's up, kid?
     -> I'm finally going to go pirating. You're a sailor, you understand.
         King_Gull: But no ship or crew? Are you ready for he pirate life?
@@ -45,6 +49,45 @@ Convenient_Narrator: Down by the water, Piper finds a busted up old ship with th
 		Convenient_Narrator: With a large hole and a broken mast, fixing it will be quite a task, but if she's up to the challenge…
 			-> I think I might have a ship.
             << set $ship=true>>
+===
+title: peach
+---
+<<if $fetchQuest == true>>
+<<jump getRum>>
+<<endif>>>>
+Peach: Amazing how the flinging of sand all over my stand stops when other folks come over.
+    -> Sorry about the sand, but I have good news. I found a ship!
+        Peach: Really? It usually takes much longer for that part.
+        Peach: I know I'm bragging but we have the best peaches on the coast.
+            -> Really?
+                Peach: Oh, don't tease. You know I'm right. They're wonderfull to add to beverages!
+===
+title: al
+---
+<<if $fetchQuest == true>>
+<<jump getHat>>
+<<endif>>
+Uncle_Al: Took a walk, huh?
+    -> You're not gonna believe this, but I found a ship washed up on the beach called the Cannonball Z.
+        Uncle_Al: That's my ship! Well, tell ya what. Maybe you can have her if you find a mentor.
+        Uncle_Al: Other than stories, you don't know squat about pirating, and I'm too me to teach ya.
+===
+title: KG
+---
+King_Gull: Back again?
+    -> Guess who found a ship? It needs work, but it's a boat.
+        King_Gull: Found a ship, huh? Well, a newbie pirate still needs a mentor.
+            -> Could you be my mentor?
+                King_Gull: Ha, not that easily, kid. I like tradition, so I need three things to know you're serious:
+                King_Gull: A good hat, a bottle of rum, and a shoulder parrot. Come back once you have those and we might talk.
+                <<set $fetchQuest=true>>
+===
+title: brawk
+---
+<<if $fetchQuest == true>>
+Brawk: Again?
+    -> Look...
+        <<die>>
 ===
 title: multiTrue
 ---
