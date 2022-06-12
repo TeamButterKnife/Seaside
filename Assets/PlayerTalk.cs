@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 public class PlayerTalk : MonoBehaviour
@@ -35,6 +36,7 @@ public class PlayerTalk : MonoBehaviour
     [YarnCommand("die")]
     public static void OnDisable() {
         Debug.Log("You are made dead (by the writers)");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void DoneTalking()
