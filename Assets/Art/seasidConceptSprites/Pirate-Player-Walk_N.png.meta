@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4383ba007c8952e488bfa48b5ba22c6b
+guid: 2bbbf760fa264b043b1be926fc6f1465
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pirate-Player-Idle_0
+      name: Pirate-Player-Walk_N_0
       rect:
         serializedVersion: 2
         x: 0
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645fdc7e2b3b5414e9445d6834408be3
-      internalID: -353228503
+      spriteID: 270203298f8830d419e50e8a0a42d6a6
+      internalID: -1661260673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirate-Player-Idle_1
+      name: Pirate-Player-Walk_N_1
       rect:
         serializedVersion: 2
         x: 64
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adcb6f3b20ca30342a3968e1d7eb8fa1
-      internalID: -122268745
+      spriteID: 0b4e820b62c5541459bd25badbc5f7ec
+      internalID: 1835667698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirate-Player-Idle_2
+      name: Pirate-Player-Walk_N_2
       rect:
         serializedVersion: 2
         x: 128
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a350e3cd8dcaddf4a968ff414e73e55c
-      internalID: -1100515908
+      spriteID: 890b9b33283c78f429bb0479392d6c1e
+      internalID: 2050843763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirate-Player-Idle_3
+      name: Pirate-Player-Walk_N_3
       rect:
         serializedVersion: 2
         x: 192
@@ -195,92 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e21fb1a0f35c0ce4caf6426d803f7932
-      internalID: -1452750675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirate-Player-Idle_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16eb9350506ce2e42a0fd29e3749fa8b
-      internalID: 1096459665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirate-Player-Idle_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f28a3bf4dfd871438d0c4f38b6febd8
-      internalID: -2044322923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirate-Player-Idle_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e911a8f054ca3304c9eeac870164cf72
-      internalID: 1424212911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirate-Player-Idle_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fa0d4d4ca00e7e489b35bb8ccf33349
-      internalID: 556058048
+      spriteID: e9f01ce6fe741214f96d20ccb1195a3d
+      internalID: -1777685927
       vertices: []
       indices: 
       edges: []
@@ -296,14 +212,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pirate-Player-Idle_6: 1424212911
-      Pirate-Player-Idle_1: -122268745
-      Pirate-Player-Idle_5: -2044322923
-      Pirate-Player-Idle_3: -1452750675
-      Pirate-Player-Idle_4: 1096459665
-      Pirate-Player-Idle_7: 556058048
-      Pirate-Player-Idle_0: -353228503
-      Pirate-Player-Idle_2: -1100515908
+      Pirate-Player-Walk_N_3: -1777685927
+      Pirate-Player-Walk_N_2: 2050843763
+      Pirate-Player-Walk_N_1: 1835667698
+      Pirate-Player-Walk_N_0: -1661260673
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
