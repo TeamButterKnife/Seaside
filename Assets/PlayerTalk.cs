@@ -32,6 +32,11 @@ public class PlayerTalk : MonoBehaviour
 
     }
 
+    [YarnCommand("die")]
+    public static void OnDisable() {
+        Debug.Log("You are made dead (by the writers)");
+    }
+
     private void DoneTalking()
     {
         gameObject.GetComponent<ShuttleMovement>().canMove = true;

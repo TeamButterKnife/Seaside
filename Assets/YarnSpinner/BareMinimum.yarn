@@ -1,0 +1,12 @@
+﻿title: start
+---
+Convenient_Narrator: It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm
+Convenient_Narrator: Piper is ready to leave and carry on the family legacy and become a pirate.
+===
+title: preShipAl
+---
+Uncle_Al: There you are.
+    -> Uncle Al, I've decided to finally pursue piracy.
+        Uncle_Al: What? You're too young to be a pirate. You don't even have a ship.
+        Uncle_Al: Shame about losing mine to the royal navy...
+===

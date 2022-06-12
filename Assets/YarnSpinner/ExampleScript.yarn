@@ -1,6 +1,4 @@
 ﻿title: Start
-// Title HAS  to be Start in order to work, apparently.
-
 ---
 Piper: Uncle Al! I finally decided: it's time for me to take up piracy.
     <<jump al1>>
@@ -9,35 +7,29 @@ title: al1
 ---
 Uncle_Al: Piracy? What for? Ain't no good in piracy. Fun, though.
 Uncle_Al: Some money in it, too, especially if ya make friends with the--
--> Uncle Al, please.
+    -> Uncle Al, please.
     Uncle_Al: Right, right. For real, though.
     Uncle_Al: You don't even have a ship. What kinda pirate doesn't have her own ship?
-    -> I wish you hadn't lost yours.
+        -> I wish you hadn't lost yours.
         Uncle_Al: Ah, stray cannonballs are part of the game.
-        Uncle_Al: So are purposefully-shot ones.
-        Uncle_Al: Suprise storms, too, all at once. Hell of a day.
-        -> That sounds awesome, actually.
+        Uncle_Al: So are purposefully shot ones.
+        Uncle_Al: Surprise storms, too, all at once. Hell of a day.
+            -> That sounds awesome, actually.
             Uncle_Al: Ha! It was. Too bad for you, huh?
-            Uncle_Al: Go take a walk and clear your head, kid.
-            -> Down to the water for a walk, then...
-//scene change to beach
-===
-title: beach
----
-At_the_Beach:
-Piper: I can't believe him... ugh.
-Piper: I guess I could use a chance to think, though. I need to plan.
+            Uncle_Al: Go take a walk and clear your head of those fool notions, kid.
+            -> Holy smoly I'm gonna die.
+//nixed beach chunk for smoother transition per B
 ===
 title: shipwreck
 ---
 Convenient_Narrator: You come across an overturned old ship.
-    -> Oh, wow. That's neat timing.
+-> Oh, wow. That's great timing.
     Convenient_Narrator: The small ship is a mess, but nothing a little elbow grease can't fix. The mast will be expensive, but...
     Convenient_Narrator: All fixable things, you think. Maybe you <i>could</i> be the kinda pirate that has her own ship.
         -> Examine the ship further.
-        Convenient_Narrator: What's this, under the algae? A name?
-        Piper: "Cannon Ball Z? Isn't that...?
-        Piper: Oh, heck yeah.
+            Convenient_Narrator: What's this, under the algae? A name?
+            Piper: "Cannonball Z?" Isn't that...?
+            Piper: Oh, heck yeah. I gotta tell Uncle Al about this.
 //scene change to Al's
 ===
 title: al2
@@ -50,12 +42,13 @@ Uncle_Al: Almost thought you got swept out to sea. Ya took so long, I was about 
 ===
 title: al3
 ---
--> Hey, what was your old ship's name?
+Piper: It was worth the trip.
+-> By the way, what was your old ship's name?
     Uncle_Al: What, all those wholly accurate anecdotes and you don't remember her name?
     Uncle_Al: Ah, whatever. The Cannonball Z... majestic beast. What a loss.
     -> I think I found ol' Z on the beach.
-    Uncle_Al: What? You found the Cannonball Z?
-    Uncle_Al: And show some respect. Use her full name. You don't know her like that.
+        Uncle_Al: What? You found the Cannonball Z?
+        Uncle_Al: And show some respect. Use her full name. You don't know her like that.
         << jump boat>>
 -> You always made the Cannonball Z sound like a galley. I found a boat.
     Uncle_Al: Well, she was a galley in spirit, ya know. Wait.
@@ -64,53 +57,101 @@ title: al3
 ===
 title: boat
 ---
-Piper: Yep! You told me to take a walk and avoid piracy, but I found a boat. I believe the story now. Thing's pretty banged up.
+Piper: Yep! You told me to take a walk and avoid piracy, but I found a boat. I believe you about that bad day at sea now. Thing's pretty banged up. //B
     Uncle_Al: Yeah, <i>my</i> boat. Ship. My ship, not yours, and you need to drop the pirate thing.
     -> You aren't even using it.
         Uncle_Al: For Snuffy's sake, you're too young to be out pirating. You don't know what you're doing.
         -> So teach me, then.
-            Uncle_Al: <i>sigh</i> Look, I can't help you with repairs or mentor you on the water. You fix her and find yourself a teacher and the boat's yours, alrght?
+            Uncle_Al: <i>sigh</i> Look, I can't help you with repairs or mentor you on the water. You fix her and find yourself a teacher and the boat's yours, alright?
             Uncle_Al: Just don't go die or something. If you wanna be a pirate, people are gonna treat you like one. Watch yourself out there.
 ===
 title: beach2
 ---
 Convenient_Narrator: Identifying the repairs that need to be done seems a reasonable first step, so back to the beach we go.
 Convenient_Narrator: Oh, it looks like you aren't the only one on the beach today. While you're going over the Z, someone calls out.
-King_Gull: Looks like your boat needs quite patch job. Planning on going fishing?
+King_Gull: Looks like your boat needs quite the patch job. 
+    <<jump kg1>>
+===
+title: kg1
+---
+King_Gull: Planning on going fishing?
     ->It's a pirate ship, not a fishing boat.
-    King_Gull: Oh, it's your pirate ship! Pardon my manners, Miss, but you don't strike me as ready for the pirately life.
+    King_Gull: Oh, it's your pirate ship! Excuse me, then. You just don't strike me as ready for the pirately life. // B
         -> Why do you even care? It's not your boat.
             King_Gull: Well, it happens that I'll be looking to take a trip out of town in a few weeks. Boats are good for that, yeah?
-            King_Gull: Boats with captains are even better, but it looks like this pirate ship has no pirates yet.
-            King_Gull: Hey, do you even have the rum and such? Can't be a pirate without that starting trio.
+            King_Gull: Boats with captains are even better, but it looks like this pirate ship has neither captain nor crew.
+            -> Not yet, it doesn't. I will be soon; I just need a carpenter and a mentor.
+                King_Gull: Ha, and you can't get taken seriously without three very important things.
                 <<jump items>>
         -> Are you going to help, or just tell me what I'm doing wrong? 
-            King_Gull: I am helping, Captain. If you want to be a pirate, tradition states that you need three things for your inaugural voyage.
-                <<jump items>>
+            King_Gull: If you want to be a pirate, tradition states that you need three things for your inaugural voyage. // B
+             <<jump items>>
 ===
 title: items
 ---
--> Three things? All I need is a good ship and a mentor.
+Piper: Three things? All I need is a good ship and a mentor.
     King_Gull: And no mentor will take on an apprentice and wannabe captain in one... especially one with no regard to tradition.
-    King_Gull: Sailors are suspicious, myself included. You need a good hat, a bottle of half-decent rum, and a shoulder parrot.
+    King_Gull: Sailors are suspicious, myself included. If you want people to take you seriously as a pirate, you need: a good hat, a bottle of half-decent rum, and a shoulder parrot.
         -> You seem to know an awful lot about this. Ever consider mentoring a wannabe captain?
             King_Gull: Ha! Maybe, if it helps me get out of town. I have standards, though, Captain.
             King_Gull: Show me you're dedicated to this and gather up those items. We can talk then.
 ===
 title: getHat
 ---
-Uncle_Al: Noticed you went on another walk. Clear your head any?
-    -> Yeah, but not the way you want. You were the Z's captain. You also have a nice hat on a shelf.
+Uncle_Al: Noticed you went on another walk. Get those wackadoodle thoughts outta your noggin? //B //decided I didn't want clearing and notion twice
+    -> No, but anyway. You were the Z's captain. You also have a nice hat you've held onto your whole retirement. // B
         Uncle_Al: Mm-hm, and what's my old hat got to do with someone who ain't a pirate?
             -> What about someone who might've found a mentor who's a stickler for tradition?
                 Uncle_Al: Mentor? What mentor? Who?
                     -> That King Gull guy. The one that's always using shop windows as mirrors. He sounded like he knew what he was talking about.
                         Uncle_Al: Gull? I know he spent a few years... Mm... I still don't like it. My hat stays where it is, as it should.
-                        -> Oh, come on. I hear about the adventures went on and the people you met and battles you fought. If anything, it's your fault I want this so badly.
+                        -> Oh, come on. I hear about the adventures you went on and the people you met and battles you fought. If anything, it's your fault I want this so badly.
                             Uncle_Al: ...
                             Uncle_Al: Fine. Don't ruffle the feather. It was your grandmother's, rest her soul.
                                 <<set $hat=true>>
-                        -> Uncle Al, please. My parents are gone and I just... I don't know, go make them proud.
-                            Uncle_Al: Heck no. What, you're gonna be a pirate 'cause you're sad? How does that make sense? No.
-                                <<set $noHat=true>>
+                        -> Uncle Al, please. My parents are dead, and there's no life here. I'm tired of working weekends at Peach's farm and I'm tired of this town.// B
+                            Uncle_Al: Heck no. What, you're gonna be a pirate 'cause you're bored? How does that make sense? Go think some more. // B
+                                <<set $hat=false>>
+// Piper: Someone around here has to have some rum... Why don't we have a shop for that? //get it? lol
+===
+title: Peach
+---
+Peach: What a shame about all this sand being so casually flung toward my cart. I wonder where it comes from?
+Peach: What a shame that THIS SAND IS GETTING ALL OVER MY PEACHES.
+Peach: Missing two peaches, too. Best Peaches on the coast and they just WANDER OFF ON THEIR OWN. What a mystery.
+Peach: Oh, Piper! Hello, how are you, dear?
+    -> Hey, Peach. Doing pretty good. Finally decided to go for it and be a pirate.
+        //<<set $hat = true>>
+        <<if $hat == true>>
+            Peach: I see that. Al's old hat, eh? I recognize that old thing.
+        <<else>>
+            Peach: Really? How're ya planning to do that, then?
+        <<endif>>
+        <<jump getRum>>
+===
+title: getRum
+---
+Peach: More goes into being a pirate than a fancy hat, Piper! Quite a lot, in fact.
+    -> A bottle half-decent rum and a shoulder parrot, I hear.
+        Peach: Yes, yes, at minimum! Oho, but that'll still be enough to get you started, darling.
+        Peach: I do have to ask, as a bit of a connoisseur, would you know a fine rum if it crossed your path?
+            -> No, but all I really need is some that's half-decent. Any idea where I could get some?
+                Peach: As a matter of fact, I do! A bit more than half-decent, if I have half-decent taste. Oh, but yes!
+                Peach: I have a bit here actually that you may have a sip of... So that you can know a half-decent one when you find it.
+                -> You're talking about that bottle there behind your cart?
+                    Peach: Of course, darling.
+                        -> Peach, that's not really good for you, I think. 
+                            Peach: Well, no one asked, Piper. I'll see you at the farm this weekend. //I SAID GOOD DAY, SIR.
+                                <<set $rum=false>>
+                        -> Ooh... Peach, I think... I think I saw that kid spit in your bottle.
+                            Peach: What!? <i>Ugh!</i> I knew that little... Ooh!
+                            Peach: Disgusting. It's certainly half-decent <i>now</i>. Get rid of this for me, would you, darling?
+                                <<set $rum=true>>
+<<jump parHint>>
+===
+title: parHint
+---
+Peaches: Was there something else?
+    -> You wouldn't happen to know where I could find a shoulder parrot, would you?
+        Peaches:  Brawk is the only person in town really qualified for that, but good luck with that.
 ===
