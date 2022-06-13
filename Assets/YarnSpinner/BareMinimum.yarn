@@ -1,7 +1,7 @@
 ﻿title: start
 ---
 Convenient_Narrator: <i>It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm isn't exciting at all.</i>
-Convenient_Narrator: <i>Piper is ready to leave to carry on the family legacy and become a pirate.<i>
+Convenient_Narrator: <i>Piper is ready to leave to carry on the family legacy and become a pirate.</i>
 Convenient_Narrator: <i>Perhaps Uncle Al would have some advice.</i>
 ===
 title: preShipAl
@@ -21,9 +21,9 @@ title: preShipBrawk
 <<endif>>
 Brawk: Buzz off.
     -> I was just saying hi.
-        Too bad.
-Convenient_Narrator: <i/>Piper learns that Brawk is a certain sort of fellow with a certain sort of attitude.</i>
-    <<die>>
+        Brawk: Too bad.
+            Convenient_Narrator: <i>Piper learns that Brawk is a certain sort of fellow with a certain sort of attitude.</i>
+                <<die>>
 ===
 title: preShipPeach
 ---
@@ -46,8 +46,8 @@ King_Gull: What's up, kid?
 title: ship
 ---
 Convenient_Narrator: <i>Down by the water, Piper finds a busted up old ship with the faded name “Cannonball Z” on the hull..</i>
-	->It's not that> busted up.
-		Convenient_Narrator: <i>With massive chunk missing and no mast to speak of, fixing it will be quite a task, but if she's up to the challenge…</i>
+	->It's not that busted up.
+		Convenient_Narrator: <i>With a massive chunk missing and no mast to speak of, fixing it will be quite a task, but if she's up to the challenge…</i>
 			-> I think I might have a ship.
             << set $ship=true>>
 ===
@@ -192,9 +192,27 @@ title: ready
 King_Gull: Congratulations on surviving an encounter with Brawk. The man only cares about two things.
     -> Thanks for the tip.
         King_Gull: I'd be a pretty shoddy mentor if I didn't help you where you needed it. However...
-        King_Gull: I was serious about taking a trip out of town soon. You feel like starting your next adventure tomorrow?
-            -> Tomorrow? But the ship...
-            King_Gull: Cut the loss, kid. Masts are very expensive to replace and there's a very free ship moored just offscreen.
+        King_Gull: Pack your stuff, hug your uncle, and tell him your new apprenticeship is officially a go.
+            -> Whoa, really?
+                King_Gull: I was serious about getting out of town soon. Your first offical pirate adventure: Steal the Flying Frenchman.
+                    -> That merchant ship moored just offscreen?
+                        King_Gull: Oh yeah, you know what's up.
+                            <<jump end>>
+            -> Pack my stuff? The ship isn't ready.
+                King_Gull: Look, cut the loss kid. Masts are expensive and there's a perfectly free ship moored just offscreen.
+                    -> Wait, really?
+                        King_Gull: I was serious about getting out of town soon. Your first offical pirate adventure: Steal the Flying Frenchman.
+                            -> Alright, let's do it!
+                            <<jump end>>
+===
+title: end
+---
+King_Gull: I'll gather up the parrot. You get yourself ready.
+    -> Thinking of Brawk... What <i>is</i> a shoulder parrot?
+        King_Gull: It's tradition for a pirate captain to sit on the shoulders of a parrot crewman when boarding a recently aquired vessel.
+            -> Does that mean Brawk is coming with us?
+                King_Gull: Of course. It'll be fine. Just watch out for that right hook.
+                    Convenient_Narrator: <i>And so, Piper prepared herself for the bright and shiny crime-filled path laid out before her. Everyone cross their fingers.</i>
 ===
 title: multiTrue
 ---
