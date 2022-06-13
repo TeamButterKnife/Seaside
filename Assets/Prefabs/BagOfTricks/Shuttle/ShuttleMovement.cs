@@ -13,6 +13,8 @@ public class ShuttleMovement : MonoBehaviour
 
     private Rigidbody2D rigidbody2D;
 
+    public GameObject Hat;
+
     [SerializeField] Vector2 inputWatcher;
 
 
@@ -30,6 +32,7 @@ public class ShuttleMovement : MonoBehaviour
         {
             rigidbody2D.velocity = new Vector2(speed * inputWatcher.x, speed * inputWatcher.y);
             gameObject.GetComponent<SpriteRenderer>().flipX = facingRight;
+            Hat.GetComponent<SpriteRenderer>().flipX = facingRight;
         }
     }
 

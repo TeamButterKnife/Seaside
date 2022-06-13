@@ -1,7 +1,8 @@
 ﻿title: start
 ---
-Convenient_Narrator: It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm isn't exciting at all.
-Convenient_Narrator: Piper is ready to leave to carry on the family legacy and become a pirate.
+Convenient_Narrator: <i>It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm isn't exciting at all.</i>
+Convenient_Narrator: <i>Piper is ready to leave to carry on the family legacy and become a pirate.<i>
+Convenient_Narrator: <i>Perhaps Uncle Al would have some advice.</i>
 ===
 title: preShipAl
 ---
@@ -21,7 +22,7 @@ title: preShipBrawk
 Brawk: Buzz off.
     -> I was just saying hi.
         Too bad.
-Convenient_Narrator: Of course, Brawk being the fellow he is, expressed his displeasure clearly.
+Convenient_Narrator: <i/>Piper learns that Brawk is a certain sort of fellow with a certain sort of attitude.</i>
     <<die>>
 ===
 title: preShipPeach
@@ -31,7 +32,7 @@ title: preShipPeach
 <<endif>>
 Peach: I think that kid stole some of my peaches...
     -> Hey, Peach. Guess what?
-        Peach: Let me guess. Pirate time? A lot goes into that.
+        Peach: Let me guess. You've grown up enough that it's pirate time? A lot goes into that, Piper.
 ===
 title: preShipKG
 ---
@@ -39,14 +40,14 @@ title: preShipKG
 <<jump KG>>
 <<endif>>
 King_Gull: What's up, kid?
-    -> I'm finally going to go pirating. You're a sailor, you understand.
-        King_Gull: But no ship or crew? Are you ready for he pirate life?
+    -> I'm finally going to go pirating. You used to be a sailor. If anyone understands, it's you.
+        King_Gull: I guess, but neither ship nor crew? Are you really ready for he pirate life?
 ===
 title: ship
 ---
-Convenient_Narrator: Down by the water, Piper finds a busted up old ship with the faded name “Cannonball Z” on the hull..
-	->It's not <i>that</i> busted up.
-		Convenient_Narrator: With a large hole and a broken mast, fixing it will be quite a task, but if she's up to the challenge…
+Convenient_Narrator: <i>Down by the water, Piper finds a busted up old ship with the faded name “Cannonball Z” on the hull..</i>
+	->It's not that> busted up.
+		Convenient_Narrator: <i>With massive chunk missing and no mast to speak of, fixing it will be quite a task, but if she's up to the challenge…</i>
 			-> I think I might have a ship.
             << set $ship=true>>
 ===
@@ -55,12 +56,12 @@ title: peach
 <<if $fetchQuest == true>>
 <<jump getRum>>
 <<endif>>
-Peach: Amazing how the flinging of sand all over my stand stops when other folks come over.
+Peach: Amazing how the flinging of sand all over my fruit stops when other folks come over.
     -> Sorry about the sand, but I have good news. I found a ship!
-        Peach: Really? It usually takes much longer for that part.
+        Peach: Wow. It usually takes much longer for that part. Anyway...
         Peach: I know I'm bragging but we have the best peaches on the coast.
             -> Really?
-                Peach: Oh, don't tease. You know I'm right. They're wonderfull to add to beverages!
+                Peach: Oh, don't tease. You know I'm right. They're a wonderful addition to beverages!
 ===
 title: al
 ---
@@ -80,25 +81,33 @@ title: KG
 <<if $rum == true>>
 <<jump onlyRum>>
 <<endif>>
+<<if $hat == true && $rum == true>>
+<<jump gotBoth>>
+<<endif>>
 King_Gull: Back again?
-    -> Guess who found a ship? It needs work, but it's a boat.
+    -> Guess who found a ship? It needs a bit of work, but it's a boat.
         King_Gull: Found a ship, huh? Well, a newbie pirate still needs a mentor.
             -> Could you be my mentor?
                 King_Gull: Ha, not that easily, kid. I like tradition, so I need three things to know you're serious:
                 King_Gull: A good hat, a bottle of rum, and a shoulder parrot. Come back once you have those and we might talk.
-                    <<set $fetchQuest=true>>
+                    -> Really?
+                        King_Gull: I said "might." I'm gonna be looking to take a trip out of town soon. I might not mind getting back on the water.
+                            <<set $fetchQuest=true>>
 ===
 title: brawk
 ---
 <<if $fetchQuest == true>>
 <<jump brawk2>>
 <<endif>>
-Brawk: Again?
+Brawk: Hm...
     -> Look...
         <<die>>
 ===
 title: brawk2
 ---
+<<if $getParrot == true>>
+<<jump getParrot>>
+<<endif>>
 Brawk:...
     -> I'm so sorry, but I have a question about shoulder parrots.
         <<die>>
@@ -111,21 +120,87 @@ Uncle_Al: Saw you talking to K.G. again. What're you two plotting?
             -> Huh. I guess you could call it that. Actually, you have your old captain's hat from when you were sailing.
                 Uncle_Al: Oh, for... fine. If K.G. thinks you have it in you, you can take the hat.
                     <<set $hat=true>>
+                    //<<hatGet Hero>>
+===
+title: getRum
+---
+Peach: Ah, you're back! Here, I wanted you to try a sip of this. Spiced peach rum!
+Peach: You can't have the whole thing, of course, just a sample. Oh, this is going to be such a hit!
+    -> Oh, is... that the bottle that's been here all day?
+        Peach: Of course! Nothing like a bit of sun-warmed rum.
+            -> I have bad news. I think I saw that kid spit in it before I came over.
+                Peach: <i>Ugh!</i> I knew he was up to something! Here, get this away from me.
+                    <<set $rum=true>>
+            -> Peach, you know drinking isn't good for you. Maybe I should take that.
+                Peach: Oh! Well, no one asked you, Piper.
+                    -> I was just trying to help.
+                    -> Your peaches taste like sand, anyway.
+                        Convenient_Narrator: <i>Oh, Piper...</i>
+                            <<die>>
 ===
 title: onlyHat
 ---
+<<if $hat == true && $rum == true>>
+<<jump gotBoth>>
+<<endif>>
 King_Gull: Got the hat already, huh? Not too bad.
     -> It's good to have connections.
         King_Gull: Correct. Now go get that rum and shoulder parrot.
 ===
 title: onlyRum
 ---
-King_Gull: Got the hat already, huh? Not too bad.
+<<if $hat == true && $rum == true>>
+<<jump gotBoth>>
+<<endif>>
+King_Gull: Got the rum already, huh? Not too bad.
     -> Being a little tricky comes in handy.
-        King_Gull: Correct. Now go get that rum and shoulder parrot.
-===
+        King_Gull: Correct. Now go get that hat and shoulder parrot.
 
-title: getRum
+===
+title: gotBoth
 ---
-Peaches: F Word!
+<<if $parrot == true>>
+<<jump ready>>
+<<endif>>
+King_Gull: Well, well, this is promising. Used your wits to get as far as wits can get you.
+    -> I don't think wits get you very far with Brawk.
+        King_Gull: No, they do not. Time to teach you a third important pirate tactic.
+            -> Wits are a pirate tactic? Hm... I guess that makes sense. I hear politcal deals happen sometimes.
+                King_Gull: Yeah, ask your uncle how that went for him. Come on. Time to learn tactic number three.
+                Convenient_Narrator: <i>King Gull subtly slips Piper a coin purse and gestures toward Brawk.</i>
+                    King_Gull: Impress me a third time.
+                        <<set $getParrot=true>>
+===
+title: getParrot
+---
+<<if $getParrot == true>>
+Brawk: ...
+    -> You don't know me well, but I have a proposition for you.
+        <<die>>
+    -> <i>Piper gently jingles the coin purse in her pocket.</i>
+        Brawk: ...
+        Brawk: You have everything else?
+            -> <i>Piper nods and passes Brawk the money.</i>
+                Brawk: You'll have a shoulder parrot when you're ready.
+                Brawk: ...
+                Brawk: You can go now.
+                    <<set $parrot=true>>
+<<endif>>
+===
+title: ready
+---
+King_Gull: Congratulations on surviving an encounter with Brawk. The man only cares about two things.
+    -> Thanks for the tip.
+        King_Gull: I'd be a pretty shoddy mentor if I didn't help you where you needed it. However...
+        King_Gull: I was serious about taking a trip out of town soon. You feel like starting your next adventure tomorrow?
+            -> Tomorrow? But the ship...
+            King_Gull: Cut the loss, kid. Masts are very expensive to replace and there's a very free ship moored just offscreen.
+===
+title: multiTrue
+---
+<<if $hat == true && $ship == true>>
+    C_N: You'll get this.
+<<else>>
+    C_N: You get this instead.
+<<endif>>
 ===
