@@ -40,6 +40,20 @@ public class PlayerTalk : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    [YarnCommand("win")]
+    public static void Win()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        // SceneManager.loa
+    }
+
+    [YarnCommand("beginning")]
+    public static void Beginning()
+    {
+
+        SceneManager.LoadScene(0);
+    }
+
     [YarnCommand("hatGet")]
     public void hatGet()
     {

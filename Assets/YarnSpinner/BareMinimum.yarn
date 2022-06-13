@@ -222,3 +222,16 @@ title: multiTrue
     C_N: You get this instead.
 <<endif>>
 ===
+title: GameOver
+---
+// Convenient_Narrarator: 
+Convenient_Narrarator: <i>Unfortunately for our intrepid hero, they died in one hit. </i>
+Convenient_Narrarator: ...
+Convenient_Narrarator: Wow, really?  All it took was one hit?
+<<beginning>>
+===
+title: Victory
+---
+Convenient_Narrarator: <i>Piper eventually figured out what being a pirate was all about. Friends.</i>
+Piper: yyyyyeeeeeAAAAAHHHHHHHH!
+===
