@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5504335022904037682}
   - component: {fileID: 7249438590445191687}
   - component: {fileID: 1252313254083876810}
-  - component: {fileID: 5340324257273959710}
   - component: {fileID: 3853046210470871445}
   m_Layer: 0
   m_Name: Ship
@@ -140,26 +139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startNode: ship
---- !u!95 &5340324257273959710
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229054340531717588}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6bf594e0f58da6b4db1e0cd19d03e481, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &3853046210470871445
 BoxCollider2D:
   m_ObjectHideFlags: 0
