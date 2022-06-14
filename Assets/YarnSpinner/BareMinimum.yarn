@@ -120,7 +120,7 @@ Uncle_Al: Saw you talking to K.G. again. What're you two plotting?
             -> Huh. I guess you could call it that. Actually, you have your old captain's hat from when you were sailing.
                 Uncle_Al: Oh, for... fine. If K.G. thinks you have it in you, you can take the hat.
                     <<set $hat=true>>
-                    //<<hatGet Hero>>
+                    <<hatGet Hero>>
 ===
 title: getRum
 ---
@@ -213,6 +213,7 @@ King_Gull: I'll gather up the parrot. You get yourself ready.
             -> Does that mean Brawk is coming with us?
                 King_Gull: Of course. It'll be fine. Just watch out for that right hook.
                     Convenient_Narrator: <i>And so, Piper prepared herself for the bright and shiny crime-filled path laid out before her. Everyone cross their fingers.</i>
+                    <<win>>
 ===
 title: multiTrue
 ---
