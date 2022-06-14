@@ -1,0 +1,38 @@
+{ "frames": [
+   {
+    "filename": "king-gull-shadow #idle 0.png",
+    "frame": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "sourceSize": { "w": 32, "h": 68 },
+    "duration": 200
+   },
+   {
+    "filename": "king-gull-shadow #idle 1.png",
+    "frame": { "x": 32, "y": 0, "w": 32, "h": 68 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "sourceSize": { "w": 32, "h": 68 },
+    "duration": 200
+   },
+   {
+    "filename": "king-gull-shadow #idle 2.png",
+    "frame": { "x": 64, "y": 0, "w": 32, "h": 68 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 68 },
+    "sourceSize": { "w": 32, "h": 68 },
+    "duration": 200
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.35",
+  "image": "king-gull-shadow-idle.png",
+  "format": "I8",
+  "size": { "w": 96, "h": 68 },
+  "scale": "1"
+ }
+}
