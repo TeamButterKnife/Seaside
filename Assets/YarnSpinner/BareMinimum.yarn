@@ -209,7 +209,7 @@ title: end
 ---
 King_Gull: I'll gather up the parrot. You get yourself ready.
     -> Thinking of Brawk... What <i>is</i> a shoulder parrot?
-        King_Gull: It's tradition for a pirate captain to sit on the shoulders of a parrot crewman when boarding a recently aquired vessel.
+        King_Gull: It's tradition for a pirate captain to sit on the shoulders of a parrot crewman when boarding a recently acquired vessel.
             -> Does that mean Brawk is coming with us?
                 King_Gull: Of course. It'll be fine. Just watch out for that right hook.
                     Convenient_Narrator: <i>And so, Piper prepared herself for the bright and shiny crime-filled path laid out before her. Everyone cross their fingers.</i>

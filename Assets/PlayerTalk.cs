@@ -21,7 +21,7 @@ public class PlayerTalk : MonoBehaviour
     {
         Debug.Log("You've tried to talk! ");
         Debug.Log(dialogueRunner.Dialogue.CurrentNode);
-        Debug.Log(dialogueRunner.startNode);
+        // Debug.Log(dialogueRunner.startNode);
         // I'll need to run the dialogue from here.
         // dialogueRunner.Dialogue.SetNode("Start"); // This SHOULD start at.. start
         // Okay, so we can set the node, how do we kick start this sucker?

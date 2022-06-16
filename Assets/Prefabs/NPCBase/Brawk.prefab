@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea01495a1bef9a4d87815d88bc80389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startNode: boat
+  startNode: preShipBrawk
 --- !u!1 &5775163577193220215
 GameObject:
   m_ObjectHideFlags: 0
