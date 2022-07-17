@@ -1,10 +1,12 @@
 ﻿title: start
+position: -190,-362
 ---
 Convenient_Narrator: <i>It's a lovely day here in the small town of Peach Beach. Alas, working weekends at the peach farm isn't exciting at all.</i>
 Convenient_Narrator: <i>Piper is ready to leave to carry on the family legacy and become a pirate.</i>
 Convenient_Narrator: <i>Perhaps Uncle Al would have some advice.</i>
 ===
 title: preShipAl
+position: 167,-327
 ---
 <<if $ship == true>>
 <<jump al>>
@@ -15,6 +17,7 @@ Uncle_Al: There you are.
         Uncle_Al: Shame about losing mine to the royal navy...
 ===
 title: preShipBrawk
+position: -131,-466
 ---
 <<if $ship == true>>
 <<jump brawk>>
@@ -26,6 +29,7 @@ Brawk: Buzz off.
                 <<die>>
 ===
 title: preShipPeach
+position: 47,-412
 ---
 <<if $ship == true >>
 <<jump peach>>
@@ -35,6 +39,7 @@ Peach: I think that kid stole some of my peaches...
         Peach: Let me guess. You've grown up enough that it's pirate time? A lot goes into that, Piper.
 ===
 title: preShipKG
+position: -182,84
 ---
 <<if $ship == true>>
 <<jump KG>>
@@ -44,6 +49,7 @@ King_Gull: What's up, kid?
         King_Gull: I guess, but neither ship nor crew? Are you really ready for the pirate life?
 ===
 title: ship
+position: 286,155
 ---
 Convenient_Narrator: <i>Down by the water, Piper finds a busted up old ship with the faded name “Cannonball Z” on the hull..</i>
 	->It's not that busted up.
@@ -52,6 +58,7 @@ Convenient_Narrator: <i>Down by the water, Piper finds a busted up old ship with
             << set $ship=true>>
 ===
 title: peach
+position: 15,-64
 ---
 <<if $fetchQuest == true>>
 <<jump getRum>>
@@ -64,6 +71,7 @@ Peach: Amazing how the flinging of sand all over my fruit stops when other folks
                 Peach: Oh, don't tease. You know I'm right. They're a wonderful addition to beverages!
 ===
 title: al
+position: -3,152
 ---
 <<if $fetchQuest == true>>
 <<jump getHat>>
@@ -74,6 +82,7 @@ Uncle_Al: Took a walk, huh?
         Uncle_Al: Other than stories, you don't know squat about pirating, and I'm too me to teach ya.
 ===
 title: KG
+position: 303,-85
 ---
 <<if $hat == true>>
 <<jump onlyHat>>
@@ -95,6 +104,7 @@ King_Gull: Back again?
                             <<set $fetchQuest=true>>
 ===
 title: brawk
+position: -362,-407
 ---
 <<if $fetchQuest == true>>
 <<jump brawk2>>
@@ -104,6 +114,7 @@ Brawk: Hm...
         <<die>>
 ===
 title: brawk2
+position: -317,129
 ---
 <<if $getParrot == true>>
 <<jump getParrot>>
@@ -113,6 +124,7 @@ Brawk:...
         <<die>>
 ===
 title: getHat
+position: -254,-82
 ---
 Uncle_Al: Saw you talking to K.G. again. What're you two plotting?
     -> Now that I have a ship, he says he might mentor me, but I need a few things first.
@@ -123,6 +135,7 @@ Uncle_Al: Saw you talking to K.G. again. What're you two plotting?
                     <<hatGet Hero>>
 ===
 title: getRum
+position: -207,244
 ---
 Peach: Ah, you're back! Here, I wanted you to try a sip of this. Spiced peach rum!
 Peach: You can't have the whole thing, of course, just a sample. Oh, this is going to be such a hit!
@@ -139,6 +152,7 @@ Peach: You can't have the whole thing, of course, just a sample. Oh, this is goi
                             <<die>>
 ===
 title: onlyHat
+position: -72,285
 ---
 <<if $hat == true && $rum == true>>
 <<jump gotBoth>>
@@ -148,6 +162,7 @@ King_Gull: Got the hat already, huh? Not too bad.
         King_Gull: Correct. Now go get that rum and shoulder parrot.
 ===
 title: onlyRum
+position: 250,374
 ---
 <<if $hat == true && $rum == true>>
 <<jump gotBoth>>
@@ -158,6 +173,7 @@ King_Gull: Got the rum already, huh? Not too bad.
 
 ===
 title: gotBoth
+position: 129,295
 ---
 <<if $parrot == true>>
 <<jump ready>>
@@ -172,6 +188,7 @@ King_Gull: Well, well, this is promising. Used your wits to get as far as wits c
                         <<set $getParrot=true>>
 ===
 title: getParrot
+position: 255,220
 ---
 <<if $getParrot == true>>
 Brawk: ...
@@ -188,6 +205,7 @@ Brawk: ...
 <<endif>>
 ===
 title: ready
+position: -27,-202
 ---
 King_Gull: Congratulations on surviving an encounter with Brawk. The man only cares about two things.
     -> Thanks for the tip.
@@ -206,6 +224,7 @@ King_Gull: Congratulations on surviving an encounter with Brawk. The man only ca
                             <<jump end>>
 ===
 title: end
+position: -132,310
 ---
 King_Gull: I'll gather up the parrot. You get yourself ready.
     -> Thinking of Brawk... What <i>is</i> a shoulder parrot?
@@ -216,6 +235,7 @@ King_Gull: I'll gather up the parrot. You get yourself ready.
                     <<win>>
 ===
 title: multiTrue
+position: -256,-19
 ---
 <<if $hat == true && $ship == true>>
     C_N: You'll get this.
@@ -224,6 +244,7 @@ title: multiTrue
 <<endif>>
 ===
 title: GameOver
+position: 348,30
 ---
 // Convenient_Narrarator: 
 Convenient_Narrarator: <i>Unfortunately for our intrepid hero, they died in one hit. </i>
@@ -232,7 +253,34 @@ Convenient_Narrarator: Wow, really?  All it took was one hit?
 <<beginning>>
 ===
 title: Victory
+position: 104,120
 ---
 Convenient_Narrarator: <i>Piper eventually figured out what being a pirate was all about. Friends.</i>
 Piper: yyyyyeeeeeAAAAAHHHHHHHH!
+===
+title: Node
+position: -143,100
+---
+
+===
+title: Node1
+position: -222,-103
+---
+
+===
+title: Node2
+position: -171,-270
+---
+
+===
+title: Node3
+position: 151,-186
+---
+
+===
+title: Node4
+position: -1792,-1402
+---
+CN: Hello world.
+
 ===
